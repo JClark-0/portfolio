@@ -19,7 +19,7 @@
 
 html {
     margin: calc(var(--gutters)*2);
-    max-width: 60ch;
+
 }
 body {
     font-family: var(--font-main);
@@ -73,4 +73,16 @@ ol {
 
 .link:hover {
     background-color: rgb(238, 238, 238);
+}
+
+@media(min-width: 600px) {
+
+    :root {
+    --font-size: 20px;
+    }
+
+    html {
+    max-width: 70ch;
+    }
+
 }
