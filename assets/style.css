@@ -3,15 +3,16 @@
 
 :root {
     --font-main:"DM Sans", sans-serif;
-    --font-size: 16px;
+    --font-size: 24px;
     --font-symbol: "Noto Sans Symbols 2", sans-serif;
+    --body-size: 16px;
 
     --accent-color: rgb(18, 18, 18);
     --bg-color:rgb(255, 255, 255);
 
-    --gutters: calc(var(--font-size) * 2);
+    --gutters: 20px;
     --border-radius: 5px;
-    --padding: 10px;
+    --padding: 6px;
 }
 
 
@@ -22,46 +23,36 @@ html {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width:80%;
-
+    width:90%;
 }
 
 body {
     font-family: var(--font-main);
-    font-size: var(--font-size);
+    font-size: var(--body-size);
     background-color: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    row-gap: calc(var(--gutters)*2);
+    color: var(--accent-color);
+}
+
+
+header{
+    font-size: var(--font-size);
+    padding-bottom: var(--gutters);
+    max-width: 35ch;
 }
 
 h1 {
-    font-size: calc(var(--font-size) * 2);
-    color: var(--accent-color);
-    font-weight: 500;
-    padding-bottom: var(--gutters);
+    font-weight: 600;
 }
 
-h2 {
-    font-family: monospace;
-    font-size: var(--font-size);
-    color: white;
-    background-color: var(--accent-color);
+aside {
+    text-transform: uppercase;
+    font-weight: 600;
     border-radius: var(--border-radius);
-    font-weight: 400;
-    text-align: center;
-    align-content: center;
-    padding: var(--padding);
-}
-
-em {
-    font-style: italic;
-    font-weight: 300;
 }
 
 ol {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: calc(var(--padding)/1.5);
     margin-top: var(--gutters);
 }
@@ -70,16 +61,39 @@ ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: var(--gutters);
     padding: var(--padding);
-    border: 1px solid black;
+    border: 1px solid var(--accent-color);
     border-radius: var(--border-radius);
 }
 
-.link:hover {
-    background-color: rgb(238, 238, 238);
+.inline-link {
+    text-decoration: underline; 
 }
 
-@media(min-width: 700px) {
+.link:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.format-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.format-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(var(--gutters)*2);
+}
+.overflow {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+
+
+/* @media(min-width: 700px) {
 
     :root {
     --font-size: 24px;
@@ -92,4 +106,4 @@ ol {
 
     } 
 
-}
+} */

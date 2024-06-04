@@ -4,30 +4,40 @@
         <link href="assets/reset.css" rel="stylesheet">
         <link href="assets/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="format-column">
         <header>
-            <h1>Hello, I'm JC Clark<em>(they/them)</em>An experienced product designer with a Master’s in UX/UI Design. </h1>
-            <p>I’m currently working on my portfolio.</p>
+            <div class="format-horizontal">
+                <h1>Hello, I'm JC Clark.</h1>
+                <h2>An experienced product designer with a Master’s in UX/UI Design.</h2>
+                <div class="arrow"></div>
+            </div>
         </header>
-        <main>
-            <h2>Portfolio Status: Work in Progress</h2>
-            <ol>
-                <li>
-                    <a href="https://www.linkedin.com/in/jc-product-design" class="link" target="_blank">
-                        <span>Linkedin</span><span>▶︎</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/JClark-0" class="link" target="_blank">
-                        <span>Github</span><span>▶︎</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:clarj524@newschool.com" class="link" target="_blank">
-                        <span>Email</span><span>▶︎</span>
-                    </a>
-                </li>
-            </ol>
+        <main class="format-column">
+            <div class="format-horizontal overflow">
+                <img src="/assets/mockup.png">
+                <img src="/assets/mockup2.png">
+            </div>
+            <div>
+                <aside>Portfolio Status: Work in Progress</aside>
+                <p>In the meantime you can check out my HTML, CSS, JS specific projects <a href="https://jclark-0.github.io/" class="inline-link"> here</a> or my other links below.</p>
+                <ol>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jc-product-design" class="link" target="_blank">
+                            <p>Linkedin</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JClark-0" class="link" target="_blank">
+                            <p>Github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:clarj524@newschool.com" class="link" target="_blank">
+                            <p>Email</p>
+                        </a>
+                    </li>
+                </ol>
+            </div>
         </main>
         <footer>
             <!-- <p>© JC Clark, 2024</p>
