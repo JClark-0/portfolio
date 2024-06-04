@@ -33,11 +33,8 @@ body {
     color: var(--accent-color);
 }
 
-
 header{
     font-size: var(--font-size);
-    padding-bottom: var(--gutters);
-    max-width: 35ch;
 }
 
 h1 {
@@ -60,8 +57,6 @@ ol {
 .link {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: var(--gutters);
     padding: var(--padding);
     border: 1px solid var(--accent-color);
     border-radius: var(--border-radius);
@@ -81,6 +76,10 @@ ol {
     justify-content: space-between;
 }
 
+.format-horizontal-gap {
+    gap: var(--gutters);
+}
+
 .format-column {
     display: flex;
     flex-direction: column;
@@ -89,6 +88,17 @@ ol {
 .overflow {
     overflow: hidden;
     overflow-x: scroll;
+}
+
+.absolute-position {
+    margin: var(--padding);
+    position: absolute;
+    color:white;
+    opacity: 50%;
+}
+
+img {
+    object-fit: cover; 
 }
 
 
